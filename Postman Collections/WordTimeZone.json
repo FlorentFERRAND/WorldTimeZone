@@ -22,7 +22,6 @@
 							"pm.test(\"Test data type of the response\", function() {\r",
 							"    var data = JSON.parse(responseBody);\r",
 							"        pm.expect(data).to.have.all.keys('abbreviation', 'client_ip','datetime', 'day_of_week', 'day_of_year','dst','dst_from','dst_offset','dst_until','raw_offset','timezone','unixtime','utc_datetime','utc_offset','week_number');\r",
-							"        pm.expect(data.abbreviation).to.be.a(\"string\");\r",
 							"        pm.expect(data.client_ip).to.be.a(\"string\");\r",
 							"        pm.expect(data.datetime).to.be.a(\"string\");\r",
 							"        pm.expect(data.day_of_week).to.be.a(\"number\");\r",
@@ -165,7 +164,7 @@
 					}
 				}
 			],
-			"_postman_id": "92c7d68f-1291-4943-a067-3380c7d4e01e",
+			"id": "92c7d68f-1291-4943-a067-3380c7d4e01e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
